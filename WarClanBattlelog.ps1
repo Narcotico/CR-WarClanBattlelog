@@ -1,3 +1,4 @@
+
 while (0 -eq 0) {
 
     #Token Insert your token between " ""
@@ -77,6 +78,7 @@ while (0 -eq 0) {
                     $teamcards = $player.team.cards | Measure-Object
                     $PlayerProperties = @{
                         type       = $Player.type
+                        tag        = $Player.tag
                         battledate = $BattleTime
                         battleday  = $battleday
                         battleTime = $Player.battleTime
@@ -101,3 +103,10 @@ while (0 -eq 0) {
     }
 
 }
+
+
+
+
+
+
+
