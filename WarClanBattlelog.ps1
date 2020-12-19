@@ -2,9 +2,9 @@
 while (0 -eq 0) {
 
     #Token Insert your token between " ""
-    $Token = ""
+    $Token = " "
     write-host "Starting"
-    #Clan Tag Insert your clan tag between "" ex #abcde
+    #Clan Tag Insert your clan tag between "" ex abcde
     $clanTag = "2PRL2RV8"
 
     $clanPath = ".\battlelog\$clanTag.csv"
@@ -78,7 +78,7 @@ while (0 -eq 0) {
                     $teamcards = $player.team.cards | Measure-Object
                     $PlayerProperties = @{
                         type       = $Player.type
-                        tag        = $Player.tag
+                        tag        = $Player.team.tag
                         battledate = $BattleTime
                         battleday  = $battleday
                         battleTime = $Player.battleTime
